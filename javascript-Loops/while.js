@@ -17,3 +17,10 @@ while (number2 <= 20) {
     console.log(number2);
     number2 += 2;
 }
+
+// 31. write a program for even number (412-456)
+var num1 = 412;
+while (num1 <= 456) {
+    console.log(num1);
+    num1 = num1 + 2;
+}
