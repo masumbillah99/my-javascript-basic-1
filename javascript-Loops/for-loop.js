@@ -21,10 +21,14 @@ console.log(i);
 
 // 31. write a program for even number (412-456)
 for (var i = 412; i <= 456; i += 2) {
-    console.log(i);
+    // console.log(i);
 }
 
 // 32. write a program for odd number (581-623)
 for (var i = 581; i < 624; i += 2) {
+    // console.log(i);
+}
+
+for (let i = 1; i <= 100; i++) {
     console.log(i);
 }
