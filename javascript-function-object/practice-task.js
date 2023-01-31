@@ -23,18 +23,29 @@ function make_avg(a, b, c) {
     const average = (a + b + c) / 3;
     return average;
 }
-var result = make_avg(5, 7, 9);
-console.log(result);
+var result1 = make_avg(5, 7, 9);
+console.log(result1);
 
 
 /**     ---- Challenging ----
  * 3. write a function called make_avg() which will take an array of integers and
     the size of that array and return the average of those values.
 */
-var array = [1, 3, 5, 7, 9];
-function make_average(array, length) {
-    array
+function make_average(numbers) {
+    let sum = 0;
+    let average;
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        sum += element;
+        // console.log(sum);
+        average = sum / numbers.length;
+    }
+    return average;
 }
+
+const hisNumbers = [13, 35, 55, 75, 99];
+const result2 = make_average(hisNumbers);
+console.log(result2);
 
 
 /**
@@ -43,8 +54,8 @@ function make_average(array, length) {
         * Has return + Has parameter
         * No return + Has parameter
 */
-function odd_even(value){
-    
+function odd_even(value) {
+
 }
 
 
