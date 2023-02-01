@@ -55,8 +55,31 @@ console.log(result2);
         * No return + Has parameter
 */
 function odd_even(value) {
-
+    if (value % 2 === 0) {
+        console.log('this value is even');
+    }
+    else {
+        console.log('this value is odd');
+    }
 }
+odd_even(5);
+odd_even(8);
+
+function even_odd(value) {
+    let returnValue = 0;
+    if (value % 2 != 0) {
+        // returnValue = value + ' this value is odd';
+        return returnValue = value + ' this value is odd';
+    }
+    else {
+        // returnValue = value + ' this value is even';
+        return returnValue = value + ' this value is even';
+
+    }
+    // return returnValue;
+}
+const result = even_odd(10);
+console.log(result);
 
 
 /**
@@ -68,3 +91,20 @@ function odd_even(value) {
     signal. its value can be green, yellow or red & we will get different activities
     as output depending on the variable. so, hurry up.
 */
+
+function trafficSignal(red, yellow, green) {
+    let signal;
+    if (signal === red) {
+        return 'you may be in danger';
+    }
+    else if (signal === yellow) {
+        return 'you should stop';
+    }
+    else {
+        return 'you should cross the road';
+    }
+}
+
+console.log(trafficSignal('red'));
+console.log(trafficSignal('yellow'));
+console.log(trafficSignal('red'));
