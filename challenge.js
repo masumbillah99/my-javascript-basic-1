@@ -1,3 +1,12 @@
+/**
+ * For problem solving most important is understand logic
+ * if (you understand logic) {
+ *      console.log('you are good');
+ * } else {
+ *      console.log('try to understand logic');
+ * }
+*/
+
 function reverseString(str) {
     let newString = '';
     for (let i = str.length - 1; i >= 0; i--) {

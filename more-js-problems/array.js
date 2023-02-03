@@ -27,3 +27,29 @@ if (friends.indexOf(35) !== -1) {
 const newFriends = [32, 54, 34, 13, 30, 24];
 const allFriends = newFriends.concat(friends);
 console.log(allFriends);
+
+
+/** some quiz problem - PH */
+const nayoks = ['“Bangla Bhai”', '”English Bhai”', '”Korean Bhai”', '”Turkish Bhai”'];
+for (const nayok of nayoks) {
+    const elements = nayok;
+    console.log(elements);
+}
+
+// What will be the final value of the sum? 
+let sum = 0;
+for (let i = 0; i <= 3; i++) {
+    sum = sum + i;
+}
+console.log(sum);
+
+const char = 'hello';
+console.log(char.length);
+
+var student2 = { name: "Yo Mama", age: 17 };
+const age2 = delete student2.age;
+console.log(student2);
+
+let arr = [2, 3, 5, 6, 8];
+let change = arr[arr.length - 1] = 5;
+console.log(arr);
