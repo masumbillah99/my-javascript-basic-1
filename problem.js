@@ -33,3 +33,16 @@ var givenNumber = 119;
 var remainder = givenNumber % 5;
 
 console.log(remainder);
+
+
+/** problem solving checklist and practice
+ * 1. feet to inch
+ * 2. centimeter to meter
+ * 3. count paper (paper requirements)
+      book1 ---> 100
+      book2 ---> 200
+      book3 ---> 300
+ * 4. ['sajid', 'mamun','kamal pasa','jubayer','chinku'];   --bestFriend--
+ * 5. [45,46,96,93,-45,-32,23];  --onlyPositive
+ * 6. 
+*/
