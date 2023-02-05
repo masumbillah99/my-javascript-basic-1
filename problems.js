@@ -212,7 +212,7 @@ function secondLargestNumber(array) {
 const output2 = secondLargestNumber(numbers);
 // console.log(output2);
 
-/** calculate total cost:
+/** 11. calculate total cost:
 Case 1: totalCost([{ name: "Dano Milk", price: 500 }, 
     { name: "Taaza Tea", price: 200}, { name: 'Fresh Sugar', price:300} ])
 Output: 1000
@@ -238,4 +238,44 @@ const case2 = [
     { name: "Samsung Charger", price: 500 }, { name: "Haveit Speakers", price: 2500 }
 ];
 const output3 = totalCost(case2);
-console.log(output3);
+// console.log(output3);
+
+// 12. delete a property from an object
+const deleteProperty = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+    }
+}
+const caseOne = [
+    {
+        fname: 'John',
+    }, 'fname'
+];
+const caseTwo = [
+    {
+        lastName: 'Mithila',
+    }, 'fname'
+];
+// const output4 = deleteProperty(caseOne);
+// console.log(output4);
+
+// 13. convert temperature
+function tempConv(faren) {
+    const C = ((faren - 32) / 1.8).toFixed(2);
+    const celcius = parseFloat(C);
+    return celcius;
+}
+
+const output5 = tempConv(103);
+console.log(output5);
+
+// conditional statements : switch
+// const letters = 
+// switch (key) {
+//     case value:
+        
+//         break;
+
+//     default:
+//         break;
+// }
