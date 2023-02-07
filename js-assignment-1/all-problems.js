@@ -1,19 +1,29 @@
 // Problem - 1
-// 
+// This function 
 function mindGame(positiveNumber) {
-    const number = (((positiveNumber * 3) + 10) / 2) - 5;
-    return number;
+    if (positiveNumber > 0) {
+        const number = (((positiveNumber * 3) + 10) / 2) - 5;
+        return number;
+    }
+    else {
+        return "Input should be a number";
+    }
 }
 
 
 // Problem - 2
 // 
 function evenOdd(str) {
-    if (str.length % 2 !== 0) {
-        return "odd";
+    if (typeof str === "string") {
+        if (str.length % 2 !== 0) {
+            return "odd";
+        }
+        else {
+            return "even";
+        }
     }
     else {
-        return "even";
+        return "Input parameter should be string";
     }
 }
 
@@ -21,34 +31,58 @@ function evenOdd(str) {
 // Problem - 3
 // 
 function isLGSeven(number) {
-    const subtraction = number - 7;
-    if (subtraction < 7) {
-        return subtraction;
+    if (typeof number === "string") {
+        return "Input number should be positive";
     }
     else {
-        return number * 2;
+        const subtraction = number - 7;
+        if (subtraction < 7) {
+            return subtraction;
+        }
+        else {
+            return number * 2;
+        }
     }
 }
 
+
 // Problem - 4
 // 
-
+function findingBadData(numbers) {
+    if (typeof numbers === "number" || typeof numbers === "string") {
+        return "Input parameter should be a Array not single number or string";
+    }
+    else {
+        let badData = [];
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] < 0) {
+                badData.push(numbers[i]);
+            }
+        }
+        return badData.length;
+    }
+}
 
 
 // Problem - 5
 // 
 function gemsToDiamond(firstGem, secGem, thirdGem) {
-    const firstFriendGem = firstGem * 21;
-    const secFriendGem = secGem * 32;
-    const thirdFriendGem = thirdGem * 43;
-
-    const totalGem = firstFriendGem + secFriendGem + thirdFriendGem;
-    const thousandDouble = 1000 * 2;
-
-    if (totalGem >= thousandDouble) {
-        return totalGem - thousandDouble;
+    if (typeof firstGem !== "number" || typeof secGem !== "number" || typeof thirdGem !== "number") {
+        return "Please give all valid number";
     }
     else {
-        return totalGem;
+        const firstFriendGem = firstGem * 21;
+        const secFriendGem = secGem * 32;
+        const thirdFriendGem = thirdGem * 43;
+
+        const totalGem = firstFriendGem + secFriendGem + thirdFriendGem;
+        const thousandDouble = 1000 * 2;
+
+        if (totalGem >= thousandDouble) {
+            return totalGem - thousandDouble;
+        }
+        else {
+            return totalGem;
+        }
     }
 }
